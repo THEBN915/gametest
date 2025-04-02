@@ -18,6 +18,7 @@ export class AirplaneController extends Component {
     }
 
     pause() {
+        console.log('Airplane paused');
         this.isPaused = true;
         input.off(Input.EventType.TOUCH_MOVE, this.onTouchMove, this);
     }
@@ -25,4 +26,4 @@ export class AirplaneController extends Component {
     onDestroy() {
         input.off(Input.EventType.TOUCH_MOVE, this.onTouchMove, this);
     }
-}
+}    

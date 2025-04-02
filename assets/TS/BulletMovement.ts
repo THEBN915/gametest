@@ -30,9 +30,10 @@ export class BulletMovement extends Component {
     }
 
     pause() {
+        console.log('Bullet paused');
         this.isPaused = true;
         if (this.bulletTween) {
             this.bulletTween.stop();
         }
     }
-}
+}    

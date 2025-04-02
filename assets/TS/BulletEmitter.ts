@@ -49,8 +49,9 @@ export class BulletEmitter extends Component {
     }
 
     stopEmitting() {
+        console.log('Bullet emission stopped');
         if (this.emitSchedule) {
             this.unschedule(this.emitBullet);
         }
     }
-}
+}    
